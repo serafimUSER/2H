@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+html, body{
+    background-color: #2D033B;
+}
+
+.divide{
+    width: 70vw;
+    margin: 30px auto;
+    display: flex;
+    justify-content: center;
+}
+
+.menu{
+    width: 23%;
+    height: 400px;
+    background-color: rgb(204, 204, 204);
+    border-radius: 20px;
+}
+
+.menu div{
+    margin: 50px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+.menu div h1{
+    font-size: 35px;
+}
+.menu p{
+    width: 140px;
+    height: 40px;
+    margin-left: 50px;
+    margin-bottom: 20px;
+    transition: .2s;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.menu p:hover{
+    justify-content: center;
+    background-color: rgb(41, 41, 41);
+}
+.menu p:hover a{
+    color: #E5B8F4;
+}
+.menu p a{
+    text-decoration: none;
+    font-size: 20px;
+    color: #E5B8F4;
+}
+
+
+
+.content{
+    width: 70%;
+    height: 800px;
+}
+.content h2{
+    font-size: 26px;
+    font-weight: normal;
+    color: #E5B8F4;
+}
+.question{
+    width: 90%;
+    margin: 15px auto;
+    height: 120px;
+}
+.question label p{
+    border-radius: 15px;
+    width: 100%;
+    height: 50px;
+    margin-bottom: 20px;
+    background-color:#2D033B;
+    border: 2px solid #E5B8F4;
+    color: #E5B8F4;
+    font-size: 19px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    transition: .2s;
+}
+.question label p span{
+    margin-left: 30px;
+}
+.question input{
+    display: none;
+}
+
+.question input:checked + label p{
+    background-color: #E5B8F4;
+    color: #2D033B;
+}
+.block_what{
+    margin-bottom: 80px;
+}
+
+.info_about_test{
+    margin-top: 70px;
+    margin-bottom: 70px;
+    color: #E5B8F4;
+}
+
+.info_about_test h1{
+    font-size: 35px;
+    font-weight: normal;
+}
+.info_about_test p{
+    font-size: 18px;
+    margin-top: 15px;
+}
+
+.info_about_test li{
+    margin-left: 15px;
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+.back{
+    position: absolute;
+    left: 25vw;
+    top: 30px;
+}
+.back a button{
+    width: 120px;
+    height: 45px;
+    outline: none;
+    border: none;
+    border-radius: 25px;
+    font-size: 18px;
+    color: #2D033B;
+    background-color: #E5B8F4;
+}
+.back a button:hover{
+    background-color: #E5B8F4d0;
+}
+
+.send_form{
+    width: 100%;
+    height: 150px;
+    display: flex;
+    justify-content: right;
+    align-items: top;
+}
+.send_form button{
+    width: 210px;
+    height: 75px;
+    border: none;
+    outline: none;
+    border-radius: 35px;
+    background-color: #E5B8F4;
+    color: #2D033B;
+    font-size: 20px;
+}
+.send_form button:hover{
+    background-color: #E5B8F4d0;
+}

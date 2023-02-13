@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+html, body{
+    background-color: #2D033B;
+}
+
+header{
+    width: 97vw;
+    height:55vh;
+    margin: 3vh auto;
+    background-color: #E5B8F4;
+    border-radius: 20px;
+
+    display: flex;
+    justify-content: center;
+    align-items: top;
+}
+
+header .menu{
+    width: 20%;
+    height: 100%;
+}
+.menu div{
+    margin: 50px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.menu div h1{
+    font-size: 35px;
+}
+.menu p{
+    width: 140px;
+    height: 40px;
+    margin-left: 50px;
+    margin-bottom: 20px;
+    transition: .2s;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.menu p:hover{
+    justify-content: center;
+    background-color: #810CA8;
+}
+.menu p:hover a{
+    color: #E5B8F4;
+}
+.menu p a{
+    text-decoration: none;
+    font-size: 22px;
+    color: rgb(40, 35, 35);
+}
+
+
+header .navig{
+    width: 20%;
+    height: 100%;
+    display: flex;
+    justify-content: right;
+}
+header .navig button{
+    width: 200px;
+    height: 70px;
+    margin: 30px;
+    border: none;
+    border-radius: 40px;
+    font-size: 20px;
+    background-color: #2D033B;
+    color: #fff;
+    transition: .2s;
+}
+header .navig button:hover{
+    background-color: #2D033Bd0;
+}
+
+
+
+header .info{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+}
+header .info div h1{
+    margin-top: -20px;
+    color: rgb(40, 35, 35);
+    font-weight: normal;
+    text-align: center;
+    font-size: 80px;
+}
+header .info div .bottom{
+    margin-top: -30px;
+}
+header .info div p{
+    color: rgb(40, 35, 35);
+    text-align: center;
+    font-size: 22px;
+}
+
+.content{
+    width: 97vw;
+    height: 37vh;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+}
+
+.about_me{
+    position: relative;
+    width: 43%;
+    height: 100%;
+    border: 2px solid #E5B8F4;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Surname_and_FirstName{
+    position: absolute;
+    bottom: 20%;
+    font-size: 25px;
+    color: #E5B8F4;
+}
+
+.user_avatar{
+    position: relative;
+    width: 40%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 10%;
+}
+.avatar{
+    width: 200px;
+    height: 200px;
+    background: #E5B8F4;
+    border-radius: 50%;
+}
+
+.somthing_info_about_me{
+    width: 60%;
+    height: 100%;
+}
+.somthing_info_about_me h3{
+    margin-top: 7.5%;
+    font-size: 25px;
+    margin-bottom: 30px;
+    color: #E5B8F4;
+}
+.somthing_info_about_me p{
+    font-size: 18.5px;
+    color:#E5B8F4;
+}
+
+.losses{
+    width: 55%;
+    height: 100%;
+    border: 2px solid #E5B8F4;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.losses canvas{
+    width: 60%;
+}
+.losses .info_chart{
+    width: 40%;
+    height: 100%;
+    color: #E5B8F4;
+}
+.losses .info_chart h3{
+    padding-top: 30px;
+    padding-left: 30px;
+    font-size: 25px;
+}
+.losses .info_chart p{
+    padding: 30px;
+    font-size: 19px;
+    padding-top: 20px;
+}
+.losses .info_chart a{
+    margin-left: 30px;
+}
+.losses .info_chart a button{
+    width: 150px;
+    height: 50px;
+    background-color: #E5B8F4;
+    border: none;
+    font-size: 18px;
+    border-radius: 30px;
+    transition: .2s;
+    font-weight: bold;
+}
+
+.losses .info_chart a button:hover{
+    background-color:  #E5B8F4d0;
+}
+

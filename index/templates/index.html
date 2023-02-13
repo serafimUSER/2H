@@ -1,0 +1,77 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>towH - Главная</title>
+<!--     <link rel="stylesheet" type="text/css" href="./css/preloader.css"> -->
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+    <header>
+        <nav class="menu">
+            <div>
+                <h1>twoH</h1>
+            </div>
+            <p>
+                <a href="/test">Тест</a>
+            </p>
+            <p>
+                <a href="">О нас</a>
+            </p>
+            <p>
+                <a href="">Контакты</a>
+            </p>
+        </nav>
+        <div class="info">
+            <div>
+                <h1>Мы сделаем всё,</h1><h1 class="bottom">чтобы вам помочь!</h1>
+                <p>
+			<i>Искусственный интеллект для определения вероятности<br>сердечно-сосудистых заболеваний</i>
+		</p>
+            </div>
+        </div>
+        <div class="navig">
+            <button onclick="on_try()">
+                Опробовать
+            </button>
+        </div>
+    </header>
+    <div class="content">
+        <div class="losses">
+            <canvas id="Loss" style="height:40vh; width:60%"></canvas>
+            <div class="info_chart">
+                <h3>Обучение</h3>
+                <p>Каждая нейронная сеть имеет 2 признака хорошего обучения. Первый и самый главный - функция ошибки, если функция находится около нуля, то ИИ обучен хорошо.</p>
+                <a href="/learning">
+                    <button>Подробнее</button>
+                </a>
+            </div>
+        </div>
+        <div class="about_me">
+            <div class="user_avatar">
+                <div class="avatar">
+                </div>
+                <p class="Surname_and_FirstName">
+                    Базык Серафим
+                </p>
+            </div>
+            <div class="somthing_info_about_me">
+                <h3>Информация об авторе</h3>
+                <p>
+                    Учащийся 9 'Б' класса ГУО 'Гимназии №7 г. Минска'. Начал свое путешествие в мире программирования, создавая сайты на HTML и CSS. После этого начал изучение языка Python и погружался в разработку нейронных сетей и машинного обучения.
+                </p>
+            </div>
+        </div>
+    </div>
+<!--     <div class="preloader">
+        <div class="lds-dual-ring"></div>
+    </div> -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="{% static 'js/script.js' %}"></script>
+<!--     <script src="js/preloader.js"></script> -->
+</body>
+</html>
