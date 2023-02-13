@@ -50,7 +50,7 @@ def test(request):
         
         model.load_weights('model_weights.h5')
         
-        return HttpResponse(f"{model.predict(array)[0][0]} %")
+        return render(request, 'tests.html', {'proc':f"{round(model.predict(array)[0][0])}"})
     return render(request, 'tests.html')
 
 

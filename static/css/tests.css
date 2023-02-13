@@ -9,6 +9,40 @@ html, body{
     background-color: #2D033B;
 }
 
+
+.mono_block {
+    position: fixed;
+    left: 0%; top: 0%;
+    width: 100vw; height: 100vh;
+    background-color: rgba(0, 0, 0, 0.303);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.mono_window{
+    width: 400px;
+    height: 250px;
+    background-color: #E5B8F4;
+    border-radius: 25px;
+    transition: .2s;
+}
+.mono_window p{
+    height: 25px;
+    width: 400px;
+}
+
+.line{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    height: 200px;
+    background-color: #2D033B;
+    font-size: 35px;
+    color: #E5B8F4;
+}
+
+
 .divide{
     width: 70vw;
     margin: 30px auto;

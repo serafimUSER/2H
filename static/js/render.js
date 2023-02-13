@@ -41,3 +41,4 @@ for (let i=0; i < q.length; i++){
 }
 
 document.getElementById('q').innerHTML = text
+

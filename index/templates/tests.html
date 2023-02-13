@@ -5,6 +5,21 @@
 {% block css %}<link rel="stylesheet" href="{% static 'css/tests.css' %}">{% endblock %}
 {% block title %}Тест{% endblock %}
 {% block content %}
+{% if proc %}
+    <a href="#" id="mono_window" onclick="mono_click()">
+        <div class="mono_block" id="mono_block">
+            <div class="mono_window">
+                <p></p>
+                <div class="line">
+                        <h1>
+                            {{proc}}%
+                        </h1>
+                </div>
+                <p></p>
+            </div>
+        </div>
+    </a>
+{% endif %}
 <form method="post" class="content">
     {% csrf_token %}
     <div class="info_about_test">
@@ -24,4 +39,9 @@
 {% endblock %}
 {% block script %}
 <script src="{% static 'js/render.js' %}"></script>
+<script>
+    function mono_click () {
+        document.getElementById('mono_window').style.display = 'none';
+    }
+</script>
 {% endblock %}
