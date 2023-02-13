@@ -56,3 +56,7 @@ def test(request):
 
 def learning(request):
     return render(request, 'learning.html')
+
+
+def about(request):
+    return render(request, 'about.html')
