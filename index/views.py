@@ -1,5 +1,8 @@
-from django.shortcuts import render
+from django.shortcuts import render, HttpResponse
+
+import tensorflow as tf
 import numpy as np
+
 
 # Create your views here.
 def index(request):
@@ -37,7 +40,17 @@ def test(request):
                     res[lengh] = float(1)
                     break
                 lengh += 1
-        array = np.array(res)
+        array = np.array([res])
+        
+        model = tf.keras.Sequential([
+            tf.keras.layers.Dense(16, input_shape=(16,), activation='relu'),
+            tf.keras.layers.Dense(1)
+        ])
+        model.compile(optimizer='adam', loss='mean_squared_error')
+        
+        model.load_weights('model_weights.h5')
+        
+        return HttpResponse(f"{model.predict(array)[0][0]} %")
     return render(request, 'tests.html')
 
 
